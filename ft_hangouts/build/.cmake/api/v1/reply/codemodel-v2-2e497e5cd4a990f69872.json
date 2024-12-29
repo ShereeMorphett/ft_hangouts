@@ -1,0 +1,187 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-435ac0bc32c0bf3fba53.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ft_hangouts",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-84c0dfc5b2afcf5e3471.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-64e350907294607866d5.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-b08561f4c71670da82bc.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-967d548f6484e75a7ee8.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-295f99f3c3d37f246f70.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts-Debug-b0db0f40af7355d7f4b7.json",
+					"name" : "appft_hangouts",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_autogen-Debug-3f25ce6a73890a69ac3e.json",
+					"name" : "appft_hangouts_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_autogen_timestamp_deps-Debug-144b16d56e3f8365f43b.json",
+					"name" : "appft_hangouts_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_qmlimportscan-Debug-47e7bf87edf8ec850d49.json",
+					"name" : "appft_hangouts_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_qmllint-Debug-1dede6a438a576322a2e.json",
+					"name" : "appft_hangouts_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_qmllint_json-Debug-47d338c02e021dfe77ee.json",
+					"name" : "appft_hangouts_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_qmllint_module-Debug-6a910a031060fe567f77.json",
+					"name" : "appft_hangouts_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_qmltyperegistration-Debug-d44bd5becf231ce2781f.json",
+					"name" : "appft_hangouts_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appft_hangouts_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appft_hangouts_tooling-Debug-45f14f1f216916cf3e87.json",
+					"name" : "appft_hangouts_tooling",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appft_hangouts_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appft_hangouts_aotstats_target-Debug-3c5a021518bc19a3eaba.json",
+					"name" : "module_appft_hangouts_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sheree/ft_hangouts/build",
+		"source" : "/home/sheree/ft_hangouts"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

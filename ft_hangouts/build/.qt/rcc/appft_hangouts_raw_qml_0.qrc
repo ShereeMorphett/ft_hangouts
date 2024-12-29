@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/ft_hangouts/">
+    <file alias="Main.qml">/home/sheree/ft_hangouts/Main.qml</file>
+    <file alias="42_Logo.png">/home/sheree/ft_hangouts/42_Logo.png</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/ft_hangouts">/home/sheree/ft_hangouts/build/ft_hangouts</file>
+
+  </qresource>
+</RCC>

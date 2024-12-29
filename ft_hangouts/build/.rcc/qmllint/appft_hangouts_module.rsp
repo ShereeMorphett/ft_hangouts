@@ -1,0 +1,10 @@
+-I
+/home/sheree/ft_hangouts/build
+-I
+/home/sheree/Qt/6.8.1/gcc_64/qml
+--resource
+/home/sheree/ft_hangouts/build/.qt/rcc/qmake_ft_hangouts.qrc
+--resource
+/home/sheree/ft_hangouts/build/.qt/rcc/appft_hangouts_raw_qml_0.qrc
+--module
+ft_hangouts

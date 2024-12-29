@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/ft_hangouts">
+    <file alias="qmldir">/home/sheree/ft_hangouts/build/ft_hangouts/qmldir</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,5 @@
+module ft_hangouts
+typeinfo appft_hangouts.qmltypes
+prefer :/qt/qml/ft_hangouts/
+Main 1.0 Main.qml
+

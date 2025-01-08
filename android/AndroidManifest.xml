@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.appHangouts" android:versionCode="1" android:versionName="1.0.0">
+
+    <application android:label="42Hangouts" android:exported="true" android:icon="@drawable/icon">
+
+        <!-- Use QtActivity for the main entry point -->
+        <activity android:name="org.qtproject.qt5.android.bindings.QtActivity" android:label="42Hangouts" android:exported="true" android:screenOrientation="unspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+<!-- %%INSERT_PERMISSIONS -->
+    <!-- %%INSERT_FEATURES -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+</manifest>

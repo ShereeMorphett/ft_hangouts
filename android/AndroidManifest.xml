@@ -1,18 +1,20 @@
 <?xml version="1.0"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.appHangouts" android:versionCode="1" android:versionName="1.0.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.appft_hangouts" android:versionCode="1" android:versionName="1.0.0">
 
-    <application android:label="42Hangouts" android:exported="true" android:icon="@drawable/icon">
+    <!-- Permissions for accessing sensors -->
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
-        <!-- Use QtActivity for the main entry point -->
+    <!-- Application configuration -->
+    <application android:label="42Hangouts" android:exported="true" android:icon="android/res/@drawable/icon.png">
+
+        <!-- Main Activity -->
         <activity android:name="org.qtproject.qt5.android.bindings.QtActivity" android:label="42Hangouts" android:exported="true" android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
     </application>
-<!-- %%INSERT_PERMISSIONS -->
-    <!-- %%INSERT_FEATURES -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
 </manifest>

@@ -1,6 +1,7 @@
 import QtQuick
 import QtSensors
 
+
 Window {
     id: mainWindow
     width: 320
@@ -12,7 +13,7 @@ Window {
     Gyroscope {
         id: gyro
         active: true
-        dataRate: 100  // Set an appropriate data rate
+        dataRate: 200  // Set an appropriate data rate
 
         Component.onCompleted: {
             console.log("Gyroscope has been created and is active.");
@@ -30,15 +31,15 @@ Window {
     Accelerometer {
         id: accel
         active: true
-        dataRate: 100
+        dataRate: 200
 
         Component.onCompleted: {
             console.log("Accelerometer has been created and is active.");
         }
 
         onReadingChanged: {
-            if (gyro.reading) {
-                console.log("Accelerometer Reading: x =", gyro.reading.x, "y =", gyro.reading.y, "z =", gyro.reading.z);
+            if (accel.reading) {
+                console.log("Accelerometer Reading: x =", accel.reading.x, "y =", accel.reading.y, "z =", accel.reading.z);
             } else {
                 console.log("No valid gyroscope reading.");
             }

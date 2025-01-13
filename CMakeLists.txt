@@ -38,6 +38,7 @@ set_target_properties(appft_hangouts PROPERTIES
 
 target_link_libraries(appft_hangouts
     PRIVATE Qt6::Quick
+    PRIVATE Qt6::Sensors
 )
 
 include(GNUInstallDirs)

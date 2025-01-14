@@ -1,6 +1,10 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include <QSqlDatabase>
 #include <QtSensors>
+
+#include "someclass.h"
 
 int main(int argc, char *argv[])
 {
@@ -11,13 +15,13 @@ int main(int argc, char *argv[])
     QObject::connect(accelerometer, &QAccelerometer::readingChanged, [&](){
         QAccelerometerReading *reading = accelerometer->reading();
         if (reading) {
-            qDebug() << "Accelerometer: x=" << reading->x() << "y=" << reading->y() << "z=" << reading->z();
+            // qDebug() << "Accelerometer: x=" << reading->x() << "y=" << reading->y() << "z=" << reading->z();
         }
     });
 
-    // Start the sensors
     accelerometer->start();
-
+    /*will leave scope if using multiple QML files, ie if main.QML finished and using another QML, this leaves scope*/
+    qmlRegisterType<SomeClass>("someclass", 1, 0, "SomeClass");
 
     QQmlApplicationEngine engine;
     QObject::connect(
@@ -26,6 +30,8 @@ int main(int argc, char *argv[])
         &app,
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
+    qDebug() << QSqlDatabase::drivers();
     engine.loadFromModule("ft_hangouts", "Main");
+
     return app.exec();
 }

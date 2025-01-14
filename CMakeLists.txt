@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE Debug)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
-find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Sensors Xml)
+find_package(Qt6 6.4 REQUIRED COMPONENTS Quick Sensors Xml Sql)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -17,10 +17,12 @@ qt_add_executable(appft_hangouts
 qt_add_qml_module(appft_hangouts
     URI ft_hangouts
     VERSION 1.0
-    QML_FILES Main.qml
     RESOURCES 42_Logo.png
     RESOURCES android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml android/gradle/wrapper/gradle-wrapper.jar android/gradle/wrapper/gradle-wrapper.properties android/gradle.properties android/gradlew android/gradlew.bat
     RESOURCES android/AndroidManifest.xml android/build.gradle android/res/values/libs.xml android/res/xml/qtprovider_paths.xml
+    SOURCES someclass.h someclass.cpp
+    QML_FILES Main.qml
+    SOURCES contactmanager.h contactmanager.cpp
 )
 set_property(TARGET appft_hangouts PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
           "${CMAKE_CURRENT_SOURCE_DIR}/android")
@@ -37,8 +39,7 @@ set_target_properties(appft_hangouts PROPERTIES
 )
 
 target_link_libraries(appft_hangouts
-    PRIVATE Qt6::Quick
-    PRIVATE Qt6::Sensors
+    PRIVATE Qt6::Quick  Qt6::Sql Qt6::Sensors Qt6::Xml
 )
 
 include(GNUInstallDirs)
